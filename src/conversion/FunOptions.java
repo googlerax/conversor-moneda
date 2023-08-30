@@ -11,40 +11,40 @@ public class FunOptions {
     public void conversionMonedas(double myInput) {
 
         String select = (JOptionPane.showInputDialog(null,
-                "Elije la moneda a la que deseas convertir tu dinero ", "Monedas",
+                "¿En que moneda deseas convertir? - What currency do you want to convert? ", "Monedas - (Currency)",
                 JOptionPane.PLAIN_MESSAGE, null, new Object[]
-                        {"De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras", "De Pesos a Yen", "De Pesos a Won Coreano", "De Dólar a Pesos", "De Euro a Pesos", "De Libras a Pesos", "De Yen a Pesos", "De Won Coreano a Pesos"},
+                        {"De Pesos (ARS) a Dólar (USD)", "De Pesos (ARS) a Euro (EUR)", "De Pesos (ARS) a Libras (GBP)", "De Pesos (ARS) a Yen (JPY)", "De Pesos (ARS) a Won Coreano (KRW)", "De Dólar (UDS) a Pesos (ARS)", "De Euro (EUR) a Pesos (ARS)", "De Libras (GBP) a Pesos (ARS)", "De Yen (JPY) a Pesos (ARS)", "De Won (KRW) Coreano a Pesos (ARS)"},
                 "Seleccion")).toString();
 
         switch (select) {
-            case "De Pesos a Dólar":
+            case "De Pesos (ARS) a Dólar (USD)":
                 moneda.pesoToDollar(myInput);
                 break;
-            case "De Pesos a Euro":
+            case "De Pesos (ARS) a Euro (EUR)":
                 moneda.pesoToEuro(myInput);
                 break;
-            case "De Pesos a Libras":
+            case "De Pesos (ARS) a Libras (GBP)":
                 moneda.pesoToLibra(myInput);
                 break;
-            case "De Pesos a Yen":
+            case "De Pesos (ARS) a Yen (JPY)":
                 moneda.pesoToYen(myInput);
                 break;
-            case "De Pesos a Won Coreano":
+            case "De Pesos (ARS) a Won Coreano (KRW)":
                 moneda.pesoToWon(myInput);
                 break;
-            case "De Dólar a Pesos":
+            case "De Dólar (UDS) a Pesos (ARS)":
                 pesoAr.dollarToPeso(myInput);
                 break;
-            case "De Euro a Pesos":
+            case "De Euro (EUR) a Pesos (ARS)":
                 pesoAr.euroToPeso(myInput);
                 break;
-            case "De Libras a Pesos":
+            case "De Libras (GBP) a Pesos (ARS)":
                 pesoAr.libraToPeso(myInput);
                 break;
-            case "De Yen a Pesos":
+            case "De Yen (JPY) a Pesos (ARS)":
                 pesoAr.yenToPeso(myInput);
                 break;
-            case "De Won Coreano a Pesos":
+            case "De Won (KRW) Coreano a Pesos (ARS)":
                 pesoAr.wonToPeso(myInput);
                 break;
         }
