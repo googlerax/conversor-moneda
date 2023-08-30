@@ -1,5 +1,6 @@
 import javax.swing.*;
 import conversion.ToCurrency;
+import conversion.MonedaAPeso;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +8,14 @@ public class Main {
 
         ToCurrency test = new ToCurrency();
 
-        test.pesoToDolar(1000);
-        test.pesoToEuro(1000);
+//        test.pesoToDollar(1000);
+//        test.pesoToEuro(1000);
 
+
+
+        MonedaAPeso pesos = new MonedaAPeso();
+
+        pesos.dollarToPeso(1);
 
 
 
