@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+import conversion.FunOptions;
 import conversion.ToCurrency;
 import conversion.MonedaAPeso;
 
@@ -6,21 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        ToCurrency test = new ToCurrency();
+        FunOptions money = new FunOptions();
 
-//        test.pesoToDollar(1000);
-//        test.pesoToEuro(1000);
-
-
-
-        MonedaAPeso pesos = new MonedaAPeso();
-
-        pesos.dollarToPeso(1);
-
-
-
-
-
+        money.conversionMonedas(1);
 
 
 
