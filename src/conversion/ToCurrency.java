@@ -8,7 +8,6 @@ public class ToCurrency {
 //    Metodo de peso Argentino a Dólares
     public void pesoToDollar(double val){
         double dolar = val*0.0029;
-        System.out.println(dolar);
         JOptionPane.showMessageDialog(null,"$"+val+" ARS equivalen a "+dolar+ " USD", "Peso a Dolar Americano", JOptionPane.PLAIN_MESSAGE);
     }
 //"Título del Cuadro de Diálogo"

@@ -8,6 +8,7 @@ public class FunOptions {
     MonedaAPeso pesoAr = new MonedaAPeso();
     ToCurrency moneda = new ToCurrency();
 
+    // funcion selectora
     public void conversionMonedas(double myInput) {
 
         String select = (JOptionPane.showInputDialog(null,

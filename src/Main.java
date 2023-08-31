@@ -1,8 +1,6 @@
 import javax.swing.*;
-
 import conversion.FunOptions;
-import conversion.ToCurrency;
-import conversion.MonedaAPeso;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +12,7 @@ public class Main {
                 String select = (JOptionPane.showInputDialog(null, "Seleccione una opción de conversión - Select a conversion option", "Menu", JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Conversor de Moneda - Currency converter", "Conversor de Tiempo"}, "Seleccion")).toString();
 
                 switch (select) {
-                    case "Conversor de Moneda - Currency converter":
+                    case "Conversor de Moneda - Currency converter" -> {
                         while (true) {
                             String cant = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir - Enter the amount of money you want to convert:");
                             if (cant == null) {
@@ -38,12 +36,10 @@ public class Main {
                                 JOptionPane.showMessageDialog(null, "Valor invalido, vuelva a intentarlo - Invalid value, try again");
                             }
                         }
-                        break;
+                    }
+                    case "Conversor de tiempo" -> System.out.println("test");
 
-                    case "Conversor de tiempo":
-                        System.out.println("test");
-                        // aquí el caso para el conversor de temperatura
-                        break;
+                    // aquí el caso para el conversor de temperatura
                 }
             } catch (NullPointerException e) {
                 System.out.println("A cancelado la operacion, ADIOS.");
@@ -54,10 +50,10 @@ public class Main {
 
 
 
-//        test de incorporacion de iconos con javax.swing.ImageIcon
-//        ImageIcon customIcon = new ImageIcon("D:\\PROGRAMACION_\\ONE-oracle\\BACK-END-JAVA\\currency-converter\\src\\iconDollar.png");
-//        // Mostrar un cuadro de diálogo con el icono personalizado
-//        JOptionPane.showMessageDialog(null, "Esto es un mensaje con un icono personalizado.", "Icono Personalizado", JOptionPane.PLAIN_MESSAGE, customIcon);
+    //        test de incorporacion de iconos con javax.swing.ImageIcon
+    /*        ImageIcon customIcon = new ImageIcon("D:\\PROGRAMACION_\\ONE-oracle\\BACK-END-JAVA\\currency-converter\\src\\iconDollar.png");*/
+    //        // Mostrar un cuadro de diálogo con el icono personalizado
+    //        JOptionPane.showMessageDialog(null, "Esto es un mensaje con un icono personalizado.", "Icono Personalizado", JOptionPane.PLAIN_MESSAGE, customIcon);
     }
 
     // function que valida si la entrada es un número
