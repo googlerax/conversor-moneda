@@ -6,8 +6,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        FunOptionTime test = new FunOptionTime();
-        test.timeConverter(4);
+
+        System.out.println(Math.round(45.858457));
 
 //        FunOptions money = new FunOptions();
 //
@@ -50,6 +50,11 @@ public class Test {
 //                JOptionPane.showMessageDialog(null, "A cancelado la operacion - ADIOS", "Aviso", JOptionPane.INFORMATION_MESSAGE);
 //                System.exit(0);
 //            }
+
+
+
+
+
     }
 
 
